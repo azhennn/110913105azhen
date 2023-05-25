@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Component</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /*
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+      img {
+        height: 200px;
+        transform: scale(1.5);
+        border: rgba(58, 170, 170, 0.84) solid 8px;
+
+        border-radius: 15px;
+      }
+      .carousel {
+        background-color: #afdee1;
+
+        width: 800px;
+        margin: 100px auto;
+        color: rgb(50, 60, 62);
+        padding: 32px;
+        padding-left: 86px;
+        position: relative;
+        border-radius: 20px;
+        /* FLEX */
+        display: flex;
+        align-items: center;
+        gap: 86px;
+      }
+      .quote-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+      }
+      .quote-author {
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+      .quote-job {
+        font-size: 12px;
+      }
+      .btn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+        stroke: #18595d;
+      }
+      .btn-left {
+        left: 0;
+      }
+      .btn-right {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="annoying cat.jpg" alt="cat" />
+      <blockquote class="quote">
+        <p class="quote-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+          necessitatibus quasi consectetur dolorum et nemo voluptas velit
+          voluptatem, modi magnam, tempore nihil veritatis facere at molestiae
+          aspernatur excepturi earum laborum!
+        </p>
+        <p class="quote-author">Moria</p>
+        <p class="quote-job">Model</p>
+      </blockquote>
+
+      <button class="btn btn-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-left"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </button>
+      <button class="btn btn-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-right"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
